@@ -2,6 +2,8 @@
 
 <h1>Posts</h1>
 
+<%= render 'form', post: @post %>
+
 <table>
   <thead>
     <tr>
@@ -13,13 +15,11 @@
 
   <tbody>
     <% @posts.each do |post| %>
-      <%= render 'post', post: @post %>
+      <%= render 'post', post: post %>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Post', new_post_path %>
 
 <div id="post-content"></div>
