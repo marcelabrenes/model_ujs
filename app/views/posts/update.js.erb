@@ -1,0 +1,5 @@
+var elem = document.querySelector(`#post-<%= @post.id %>`)
+elem.innerHTML = "<%= j render partial: 'posts/post-detail', locals: { post: @post } %>"
+
+var div = document.querySelector('#post-content')
+div.innerHTML = ''

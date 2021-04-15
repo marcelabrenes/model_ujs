@@ -1,0 +1,2 @@
+var elemento = document.querySelector('#post-content')
+elemento.innerHTML = "<%= escape_javascript(render partial: 'posts/show', locals: {post: @post}) %>"

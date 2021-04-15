@@ -1,0 +1,5 @@
+var elemento = document.querySelector('table tbody')
+elemento.insertAdjacentHTML('beforeend', "<%= escape_javascript(render partial: 'posts/post', locals: {post: @post}) %>")
+
+var content = document.querySelector('#post_content')
+content.value = ''
